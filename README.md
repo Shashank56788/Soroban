@@ -134,7 +134,7 @@ npm run dev
 
 ### 3. CI/CD Green Run Pipeline (GitHub Actions)
 *Place screenshot of GitHub Actions green run under `assets/ci-pipeline.png`*
-![CI/CD Pipeline Run](./assets/ci-pipeline.png)
+![alt text](image-2.png)
 
 ---
 
