@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-brand-bg: #060814;
+  --color-brand-card: #121424;
+  --color-brand-primary: #6366f1;
+  --color-brand-accent: #a855f7;
+  --color-brand-success: #10b981;
+  --color-brand-warning: #f59e0b;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-gray-100 font-sans antialiased;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 40%),
+      radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.12) 0px, transparent 40%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+  background: rgba(18, 20, 36, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 20, 36, 0.85);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 40px 0 rgba(99, 102, 241, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Glow effects */
+.text-glow-primary {
+  text-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
+}
+
+.text-glow-accent {
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #060814;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1b4b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Custom progress bar animations */
+@keyframes progress-shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.progress-bar-shimmer {
+  background-size: 200% 200%;
+  animation: progress-shimmer 2s linear infinite;
+}
