@@ -19,3 +19,6 @@ Cargo.lock
 *.sw?
 .DS_Store
 Thumbs.db
+
+# Installers
+/stellar-installer.exe
