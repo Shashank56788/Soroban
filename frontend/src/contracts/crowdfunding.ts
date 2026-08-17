@@ -8,7 +8,7 @@ import {
   Account,
   xdr,
   Address,
-} from "stellar-sdk";
+} from "@stellar/stellar-sdk";
 import { signTransaction } from "@stellar/freighter-api";
 
 // Default contract ID (can be overridden by environment variables)

@@ -116,8 +116,8 @@ npm run dev
 ## 🚀 Deployed Addresses & Links (Submission Details)
 
 - **Live Frontend Demo**: [https://soroband-fund.vercel.app/](https://soroband-fund.vercel.app/) *(Fill in once deployed)*
-- **Smart Contract ID**: `CAC3P5X22L5Z4ZJWWJXZL4A3HJKZLSYZXZJKZLSYZXZJKZLSYZXZJKZL` *(Default testnet placeholder)*
-- **Example Transaction Hash (Pledge/Creation)**: `0x...` *(Copy after on-chain call)*
+- **Smart Contract ID**: `CCZROZERIRNUOZVPZJQCE5OSGKPJNDHPVYOW4ZMLFLMO5K47ZFW2EIG7`
+- **Example Transaction Hash (Pledge/Creation)**: `e585d3a594f40e3f8a78e6db76fd4159b8796de5da90113ddee07a0138803928`
 - **Demo Video (Loom/YouTube)**: [Watch Walkthrough](https://youtu.be/placeholder) *(Replace with unlisted walkthrough)*
 
 ---
