@@ -41,7 +41,7 @@ export async function getCampaignCount(): Promise<number> {
   try {
     const contract = new Contract(CONTRACT_ID);
     const tx = new TransactionBuilder(
-      new Account("GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHB", "0"),
+      new Account("GBCC5T6MHDT4PGTNOUMD2PYWWSPLWEVU3BOXMQVKOLL763ENAJ4V3U43", "0"),
       { fee: "100", networkPassphrase: NETWORK_PASSPHRASE }
     )
       .addOperation(contract.call("get_campaign_count"))
@@ -67,7 +67,7 @@ export async function getCampaign(campaignId: number): Promise<Campaign | null> 
     const contract = new Contract(CONTRACT_ID);
     const idSc = nativeToScVal(BigInt(campaignId), { type: "u64" });
     const tx = new TransactionBuilder(
-      new Account("GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHB", "0"),
+      new Account("GBCC5T6MHDT4PGTNOUMD2PYWWSPLWEVU3BOXMQVKOLL763ENAJ4V3U43", "0"),
       { fee: "100", networkPassphrase: NETWORK_PASSPHRASE }
     )
       .addOperation(contract.call("get_campaign", idSc))
@@ -110,7 +110,7 @@ export async function getPledge(campaignId: number, backerAddress: string): Prom
     const idSc = nativeToScVal(BigInt(campaignId), { type: "u64" });
     const backerSc = nativeToScVal(Address.fromString(backerAddress));
     const tx = new TransactionBuilder(
-      new Account("GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHB", "0"),
+      new Account("GBCC5T6MHDT4PGTNOUMD2PYWWSPLWEVU3BOXMQVKOLL763ENAJ4V3U43", "0"),
       { fee: "100", networkPassphrase: NETWORK_PASSPHRASE }
     )
       .addOperation(contract.call("get_pledge", idSc, backerSc))
