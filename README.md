@@ -126,11 +126,11 @@ npm run dev
 
 ### 1. Passing Unit Tests (3+ Tests)
 *Place screenshot showing cargo test success under `assets/test-output.png`*
-![Test Output Output](./assets/test-output.png)
+![Test Output Output](image-1.png)
 
 ### 2. Mobile Responsive Web UI (375px wide)
 *Place screenshot of mobile device mock in browser dev tools under `assets/mobile-ui.png`*
-![Mobile UI UI](./assets/mobile-ui.png)
+![Mobile UI UI](image.png)
 
 ### 3. CI/CD Green Run Pipeline (GitHub Actions)
 *Place screenshot of GitHub Actions green run under `assets/ci-pipeline.png`*
