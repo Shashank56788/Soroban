@@ -156,7 +156,7 @@ async function buildAndSubmitTx(
   }
 
   // 4. Assemble resources
-  const assembledTx = rpc.assembleTransaction(initialTx, simulated) as any;
+  const assembledTx = rpc.assembleTransaction(initialTx, simulated).build();
 
   // 5. Sign with Freighter wallet
   const signResult = await signTransaction(assembledTx.toXDR(), {
