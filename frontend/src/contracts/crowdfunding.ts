@@ -12,7 +12,7 @@ import {
 import { signTransaction } from "@stellar/freighter-api";
 
 // Default contract ID (can be overridden by environment variables)
-export const CONTRACT_ID = import.meta.env.VITE_CONTRACT_ID || "CAC3P5X22L5Z4ZJWWJXZL4A3HJKZLSYZXZJKZLSYZXZJKZLSYZXZJKZL"; 
+export const CONTRACT_ID = import.meta.env.VITE_CONTRACT_ID || "CBC5FK6TDJZTDAVBLDZL3FDQSDYHS3LNYRBLXUSHO4HHKNJEJ57UXVOL"; 
 
 export const NETWORK_PASSPHRASE = Networks.TESTNET;
 export const RPC_URL = "https://soroban-testnet.stellar.org";

@@ -11,6 +11,7 @@ import {
 } from "./contracts/crowdfunding";
 import type { Campaign } from "./contracts/crowdfunding";
 import { isConnected, requestAccess, getAddress } from "@stellar/freighter-api";
+import { Address } from "@stellar/stellar-sdk";
 import { 
   Wallet, 
   PlusCircle, 
@@ -159,6 +160,15 @@ export default function App() {
     if (isNaN(deadlineTimestamp) || deadlineTimestamp <= Math.floor(Date.now() / 1000)) {
       showToast("Deadline must be a future date.", "error");
       return;
+    }
+
+    if (recipient) {
+      try {
+        Address.fromString(recipient);
+      } catch (err) {
+        showToast("Recipient Address must be a valid Stellar address (starting with 'G').", "error");
+        return;
+      }
     }
 
     setTxLoading(true);
