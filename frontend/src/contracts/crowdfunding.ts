@@ -19,7 +19,7 @@ export const RPC_URL = "https://soroban-testnet.stellar.org";
 export const server = new rpc.Server(RPC_URL);
 
 // Native XLM Token Address on Stellar Testnet
-export const NATIVE_TOKEN_ADDRESS = "CDLZFC3SYJYDZT7K67VZ75HPJGWK373F64VCH2CBG7K32CQQNGVZC5F4";
+export const NATIVE_TOKEN_ADDRESS = "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC";
 
 export interface Campaign {
   id: number;
